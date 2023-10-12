@@ -49,7 +49,7 @@
         data.set('name', '光');
         data.set('age', 18);
         data.set('file1', fileInput.files[0]);
-        data.set('file1', fileInput.files[1]);
+        data.set('file2', fileInput.files[1]);
 
         const res = await axios.post('/api/person/file', data, {
           headers: { 'content-type': 'multipart/form-data' },
